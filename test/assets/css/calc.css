@@ -1,0 +1,55 @@
+body{
+    background-color: midnightblue;
+}
+.flex{
+    display: flex;
+    justify-content: center;
+    margin: 20vh auto;
+    font-size: 4rem;
+}
+.scocca{
+    background-color: whitesmoke;
+    border: 0;
+    border-radius: 20px;
+    position: relative;
+}
+.tastierino{
+    margin: .5rem;
+}
+.superiore, .centrale, .centrale-2, .inferiore{
+    display: flex;
+    font-size: 3.5rem;
+}
+.display, .superiore > input, .centrale > input, .centrale-2 > input, .inferiore > input, .uguale{
+    flex: 1;
+    margin: 0.2rem;
+    font-size: 4rem;
+    border: 0;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px rgb(186, 181, 181);
+}
+.uguale{
+    border: 0;
+    background-color: coral;
+    width: 100%;
+}
+.uguale:active, input:active{
+    box-shadow: inset 5px 5px 5px rgb(61, 58, 58);
+}
+.hidden{
+    position: absolute;
+    z-index: -1;
+    left: 0rem;
+    bottom: 5rem;
+    animation: movimento 0.5s linear 1s both;
+    animation-delay: 5s;
+}
+@keyframes movimento{
+    0% {
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-5rem);
+        z-index: 0;
+    }
+}

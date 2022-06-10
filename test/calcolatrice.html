@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcolatrice</title>
+    <script src="assets/js/calc.js"></script>
+    <link rel="stylesheet" href="assets/css/calc.css">
+</head>
+<body>
+<div class="flex">
+    <div class="scocca">
+     <div class="tastierino">
+        <input type="text" name="display" id="operazioni" class="display">
+       <div class="superiore">
+           <input type="submit" id="7" value="7" onclick="numero(7)" class="tasto">
+           <input type="submit" id="8" value="8" onclick="numero(this.id)" class="tasto">
+           <input type="submit" id="9" value="9" onclick="numero(this.id)" class="tasto">
+           <input type="submit" id="+" value="+" onclick="operatore(this.id)" class="tasto">
+       </div>
+       <div class="centrale">
+           <input type="submit" id="4" value="4" onclick="numero(this.id)" class="tasto">
+           <input type="submit" id="5" value="5" onclick="numero(this.id)" class="tasto">
+           <input type="submit" id="6" value="6" onclick="numero(this.id)" class="tasto">
+           <input type="submit" id="-" value="-" onclick="operatore(this.id)" class="tasto">
+       </div>
+       <div class="centrale-2">
+            <input type="submit" id="1" value="1" onclick="numero(this.id)" class="tasto">
+            <input type="submit" id="2" value="2" onclick="numero(this.id)" class="tasto">
+            <input type="submit" id="3" value="3" onclick="numero(this.id)" class="tasto">
+            <input type="submit" id="*" value="x" onclick="operatore(this.id)" class="tasto">
+        </div>
+        <div class="inferiore">
+           <input type="submit" value="C" onclick="cancella()" class="tasto">
+           <input type="submit" id="0" value="0" onclick="numero(this.id)" class="tasto">
+           <input type="submit" id="." value="." onclick="operatore(this.id)" class="tasto">
+           <input type="submit" id="/" value="/" onclick="operatore(this.id)" class="tasto">
+         </div>
+         <div class="ugualediv">
+            <button value="=" onclick="operazione()" class="uguale">=</button>
+         </div>
+      </div>         
+        <div>
+            <button onclick="canzone()" class="hidden">
+                <img src="assets/img/rick_roll_d.ico" width="40px">
+            </button>
+            <audio src="assets/audio/nggyu.mp3" id="rick"></audio>
+        </div>
+    </div>
+</div>
+</body>
+</html>
